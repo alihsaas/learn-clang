@@ -15,4 +15,6 @@ int main()
   int product = xA*xB + yA*yB + zA*zB;
 
   printf("SCALAR PRODUCT IS: vA.vB = %d*%d + %d*%d + %d*%d = %d\n", xA, xB, yA, yB, zA, zB, product);
+
+  return 0;
 }

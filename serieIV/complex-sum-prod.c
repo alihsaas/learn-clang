@@ -1,5 +1,4 @@
-// Write a C program to calculate the sum and the product of 2 complex 
-// numbers.
+// Write a C program to calculate the sum and the product of 2 complex numbers.
 
 #include <stdio.h>
 
@@ -15,4 +14,6 @@ int main()
 
   printf("SUM Is: %d + %di\n", realA + realB, imagA + imagB);
   printf("PRODUCT Is: %d + %di\n", realA * realB, imagA * imagB);
+
+  return 0;
 }

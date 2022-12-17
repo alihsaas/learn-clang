@@ -1,5 +1,4 @@
-// Write a C program to find the max between N numbers given 
-// by the user.
+// Write a C program to find the max between N numbers given by the user.
 
 #include <stdio.h>
 
@@ -17,4 +16,6 @@ int main()
     if (input > maximum) maximum = input;
   }
   printf("Max is %d\n", maximum);
+
+  return 0;
 }

@@ -10,8 +10,13 @@ int main()
   printf("ENTER a, b (FORM: a, b)\n");
   scanf("%d, %d", &a, &b);
   
-  (a == 0) ?
-     printf("%s\n", b == 0 ? "Infinite solutions" : "No Solutions")
-  :
+  if (a == 0) {
+    if (b == 0) {
+      printf("Infinite solutions");
+    } else {
+      printf("No Solutions");
+    }
+  } else {
     printf("x = %d/%d = %f\n", -b, a, -b/(float)a);
+  }
 }

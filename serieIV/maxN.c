@@ -9,13 +9,14 @@ int main()
   printf("ENTER NUMBER OF NUMBERS TO COMPARE\n");
   scanf("%d", &number_of_inputs);
 
-  int maximum = 0;
+  float maximum;
+  scanf("%f", &maximum);
   for (int i = 0; i < number_of_inputs; i++) {
-    int input;
-    scanf("%d", &input);
+    float input;
+    scanf("%f", &input);
     if (input > maximum) maximum = input;
   }
-  printf("Max is %d\n", maximum);
+  printf("Max is %f\n", maximum);
 
   return 0;
 }

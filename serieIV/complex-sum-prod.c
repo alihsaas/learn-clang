@@ -13,7 +13,7 @@ int main()
   scanf("%d,%di", &realB, &imagB);
 
   printf("SUM Is: %d + %di\n", realA + realB, imagA + imagB);
-  printf("PRODUCT Is: %d + %di\n", realA * realB, imagA * imagB);
+  printf("PRODUCT Is: %d + %di\n", realA * realB - imagA * imagB, realA * imagB + realB * imagA);
 
   return 0;
 }

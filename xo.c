@@ -8,6 +8,7 @@
 int main() {
 
 	int turn = 0;
+	int is_incomplete = 9;
 	int board[3][3] = {0};
 
 	int highlighted[2] = {0, 0};
@@ -61,6 +62,10 @@ int main() {
 			printf("Team %d Won!", is_won);
 			break;
 		};
+		if (is_incomplete == 0) {
+			printf("Draw!");
+			break;
+		}
 
 		char x = _getch();
 
@@ -83,6 +88,7 @@ int main() {
 				if (board[highlighted[0]][highlighted[1]] == 0) {
 					board[highlighted[0]][highlighted[1]] = turn + 1;
 					turn = (turn + 1) % 2;
+					is_incomplete--;
 				}
 				break;
 		}

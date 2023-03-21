@@ -11,6 +11,7 @@ int main()
 	for (int i = 0; i < ROW_SIZE; i++) {
 		for (int j = 0; j < COLUMN_SIZE; j++) {
 			fflush(stdin);
+			printf("ENTER VALUE FOR ROW %d COLUMN %d\n", i, j);
 			scanf("%d", &A[i][j]);
 		}
 	}

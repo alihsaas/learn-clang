@@ -7,12 +7,13 @@ int main()
 
 	float values[SIZE];
 	int N;
-
+	printf("enter the dimendion of table\n");
 	do scanf("%d", &N); while (N > SIZE || N < 0);
 
 	// filling
 	for (int i = 0; i < N; i++) {
 		fflush(stdin);
+		printf("fill column %d\n", i);
 		scanf("%f", &values[i]);
 	}
 	

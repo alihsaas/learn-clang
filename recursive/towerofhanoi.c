@@ -64,7 +64,6 @@ void movetower(int block, Tower *from, Tower *to, Tower *middle) {
 	printf("TOWER C\n");
 	displaytower(towers[2], N);
 	printf("ENTER ANY KEY TO CONTINUE");
-
 	char step;
 	fflush(stdin);
 	scanf("%c", &step);
